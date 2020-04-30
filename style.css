@@ -1,0 +1,114 @@
+html {
+    font-size: 15px ;
+}
+h1, h4 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 40vh;
+    height: 55vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #376170;
+    padding: 10px;
+    
+}
+.display {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    flex-grow: 1; 
+    height: 3%; 
+    margin-top: 1rem;  
+    background-color: #ededed;
+}
+p {
+    text-align: end;
+    margin: 0;
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+}
+
+.numbers {
+    
+    flex-grow: 3;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+ .operators {
+     
+     flex-grow: 1;
+     display: grid;
+     grid-template-rows: 20% 20% 20% 20% 20%;
+    
+ }
+
+ .buttons {
+     flex-grow: 9;
+     display: flex;
+     flex-direction: row;
+     
+ }
+ 
+.num {
+	box-shadow:inset 0px 1px 0px 0px #276873;
+	background-color:#599bb3;
+	border-radius:6px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.num:hover {
+	background-color:#408c99;
+}
+.num:active {
+	position:relative;
+	top:1px;
+}
+
+.operators button, .operator{
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.operators button:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.operators button:active {
+	position:relative;
+	top:1px;
+}
+.operator:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.operator:active {
+	position:relative;
+	top:1px;
+}
